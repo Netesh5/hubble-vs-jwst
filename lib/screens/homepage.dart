@@ -12,27 +12,132 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 80,
         backgroundColor: Colors.black,
         centerTitle: true,
         title: Text(
           "Hubble vs JWST",
           style: TextStyle(
               color: textcolor,
+              fontSize: 28,
               fontFamily: "ubuntu",
               fontWeight: FontWeight.bold),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: BeforeAfter(
-            beforeImage: Image.asset(
-              "assets/images/ringhubble.jpeg",
-              fit: BoxFit.cover,
-            ),
-            afterImage: Image.asset(
-              "assets/images/ringjwst.png",
-              fit: BoxFit.cover,
-            )),
+      body: GridView.count(
+        crossAxisSpacing: 1,
+        mainAxisSpacing: 2,
+        crossAxisCount: 2,
+        children: <Widget>[
+          Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Southern Ring Nebula",
+                style: TextStyle(
+                    color: textcolor,
+                    fontSize: 28,
+                    fontFamily: "ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              BeforeAfter(
+                  beforeImage: Image.asset(
+                    "assets/images/ringhubble.jpeg",
+                    fit: BoxFit.cover,
+                  ),
+                  afterImage: Image.asset(
+                    "assets/images/ringjwst.png",
+                    fit: BoxFit.cover,
+                  )),
+            ],
+          ),
+          Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Southern Ring Nebula",
+                style: TextStyle(
+                    color: textcolor,
+                    fontSize: 28,
+                    fontFamily: "ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              BeforeAfter(
+                  beforeImage: Image.asset(
+                    "assets/images/ringhubble.jpeg",
+                    fit: BoxFit.cover,
+                  ),
+                  afterImage: Image.asset(
+                    "assets/images/ringjwst.png",
+                    fit: BoxFit.cover,
+                  )),
+            ],
+          ),
+          Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Southern Ring Nebula",
+                style: TextStyle(
+                    color: textcolor,
+                    fontSize: 28,
+                    fontFamily: "ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              BeforeAfter(
+                  beforeImage: Image.asset(
+                    "assets/images/ringhubble.jpeg",
+                    fit: BoxFit.cover,
+                  ),
+                  afterImage: Image.asset(
+                    "assets/images/ringjwst.png",
+                    fit: BoxFit.cover,
+                  )),
+            ],
+          ),
+          Column(
+            children: [
+              SizedBox(
+                height: 10,
+              ),
+              Text(
+                "Southern Ring Nebula",
+                style: TextStyle(
+                    color: textcolor,
+                    fontSize: 28,
+                    fontFamily: "ubuntu",
+                    fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              BeforeAfter(
+                  beforeImage: Image.asset(
+                    "assets/images/ringhubble.jpeg",
+                    fit: BoxFit.cover,
+                  ),
+                  afterImage: Image.asset(
+                    "assets/images/ringjwst.png",
+                    fit: BoxFit.cover,
+                  )),
+            ],
+          ),
+        ],
       ),
     );
   }
