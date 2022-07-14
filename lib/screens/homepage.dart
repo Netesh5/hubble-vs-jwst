@@ -35,7 +35,7 @@ class _HomepageState extends State<Homepage> {
                 height: 10,
               ),
               Text(
-                "Southern Ring Nebula",
+                "Southern Ring Nebula".toUpperCase(),
                 style: TextStyle(
                     color: textcolor,
                     fontSize: 28,
@@ -62,7 +62,7 @@ class _HomepageState extends State<Homepage> {
                 height: 10,
               ),
               Text(
-                "Southern Ring Nebula",
+                "STEPHAN'S QUINTET",
                 style: TextStyle(
                     color: textcolor,
                     fontSize: 28,
@@ -74,11 +74,11 @@ class _HomepageState extends State<Homepage> {
               ),
               BeforeAfter(
                   beforeImage: Image.asset(
-                    "assets/images/ringhubble.jpeg",
+                    "assets/images/stephans_quintethubble.jpeg",
                     fit: BoxFit.cover,
                   ),
                   afterImage: Image.asset(
-                    "assets/images/ringjwst.png",
+                    "assets/images/stephans_quintet.jpeg",
                     fit: BoxFit.cover,
                   )),
             ],
@@ -101,11 +101,11 @@ class _HomepageState extends State<Homepage> {
               ),
               BeforeAfter(
                   beforeImage: Image.asset(
-                    "assets/images/ringhubble.jpeg",
+                    "assets/images/carinahubble.jpeg",
                     fit: BoxFit.cover,
                   ),
                   afterImage: Image.asset(
-                    "assets/images/ringjwst.png",
+                    "assets/images/carinajwst.jpeg",
                     fit: BoxFit.cover,
                   )),
             ],
